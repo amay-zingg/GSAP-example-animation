@@ -1,0 +1,498 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: .35em .75em .625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.skip-link {
+  position: fixed;
+  top: -200px;
+  background: #000;
+  color: #FFF;
+  padding: 10px;
+}
+
+.skip-link:focus {
+  top: 0;
+  /* Now the link will appear */
+}
+
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: maroon;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h1, h2, p, a {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  color: black;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section {
+  width: 100%;
+  padding: .5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section .section-2 {
+  margin-top: 1em;
+  text-align: center;
+}
+
+@media only screen and (min-width: 900px) {
+  .wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  section {
+    width: 50%;
+  }
+  section.section-2 {
+    margin-top: 0;
+  }
+}
+
+/* * * * BASE * * * */
+.container {
+  width: 300px;
+  height: 600px;
+  overflow: hidden;
+  border: 1px solid #000;
+  position: relative;
+}
+
+.text {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: default;
+}
+
+@font-face {
+  font-family: 'tt_masters';
+  src: url("./../tt-masters-demo.mastersdemoblack-webfont.woff") format("woff2"), url("./../tt-masters-demo.mastersdemoblack-webfont.woff2") format("woff");
+  /* Pretty Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'futura_bold';
+  src: url("./../futura_bold-webfont.woff2") format("woff2"), url("./../futura_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* * * * UNDERSTANDING @font-face * * * */
+#logo {
+  width: 300px;
+  position: absolute;
+  text-align: center;
+  bottom: 17px;
+}
+
+/* * * * TOP SECTION * * * */
+#top-section {
+  position: absolute;
+  width: 300px;
+  height: 446px;
+  background-image: url(./../assets/top-section.png);
+}
+
+#top-section #title-container {
+  position: absolute;
+  -webkit-transform: rotate(-12.7deg), scale(2, 2);
+  transform: rotate(-12.7deg), scale(2, 2);
+  left: 0;
+  top: 166px;
+}
+
+#top-section .big-txt {
+  font-size: 146px;
+  color: #FFF;
+  font-family: 'tt_masters';
+}
+
+#top-section .sales-txt {
+  font-size: 77px;
+  color: #ffc600;
+  font-family: 'tt_masters';
+  line-height: 10px;
+}
+
+/* * * * MIDDLE SECTION * * * */
+#middle-section {
+  position: absolute;
+  top: 100px;
+  opacity: 0;
+}
+
+#middle-section #photo1 {
+  position: absolute;
+  opacity: 1;
+  z-index: 30;
+}
+
+#middle-section #photo2 {
+  position: absolute;
+  opacity: 0;
+  left: -300px;
+}
+
+#middle-section #photo3 {
+  position: absolute;
+  opacity: 0;
+}
+
+#middle-section #photo4 {
+  position: absolute;
+  opacity: 0;
+}
+
+#last-screen {
+  width: 300px;
+  opacity: 0;
+}
+
+#last-screen .cta-button {
+  position: absolute;
+  width: 178px;
+  height: 58px;
+  background-color: #ffd200;
+  font-family: 'futura_bold';
+  font-size: 20px;
+  text-align: center;
+  padding-top: 16px;
+  left: 60px;
+  top: 272px;
+  -webkit-border-sizing: border-box;
+  -moz-border-sizing: border-box;
+  -box-sizing: border-box;
+}
+
+#upto-txt {
+  position: absolute;
+  top: 72px;
+  width: 100%;
+  text-align: center;
+}
+
+#off-txt {
+  position: absolute;
+  top: 214px;
+  width: 100%;
+  text-align: center;
+}
+
+#percent-txt {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  text-align: center;
+  -webkit-transform: rotate(-12.7deg);
+  transform: rotate(-12.7deg);
+  opacity: 0;
+}
+
+#percent-txt .percent {
+  color: #db0000;
+  font-size: 110px;
+  font-family: 'tt_masters';
+}
+
+#last-screen.promo-sub {
+  color: #000;
+  font-size: 25px;
+  font-family: 'tt_masters';
+}
+
+/* * * * BOTTOM SECTION * * * */
+#bottom-section {
+  position: absolute;
+  width: 300px;
+  height: 216px;
+  background-image: url(./../assets/bottom-section.png);
+  top: 384px;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,181 @@
+/* * * * BASE * * * */
+.container{
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.text{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: default;
+}
+
+
+@font-face {
+    font-family: 'tt_masters';
+    // src: url('webfont.eot'); /* IE9 Compat Modes */
+    src:url('./../tt-masters-demo.mastersdemoblack-webfont.woff') format('woff2'), /* Super Modern Browsers */
+        url('./../tt-masters-demo.mastersdemoblack-webfont.woff2') format('woff'); /* Pretty Modern Browsers */
+        // url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        //    url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+        //    url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura_bold';
+    src:url('./../futura_bold-webfont.woff2') format('woff2'),
+        url('./../futura_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* * * * UNDERSTANDING @font-face * * * */
+// https://css-tricks.com/snippets/css/using-font-face/
+// https://www.fontsquirrel.com/tools/webfont-generator
+
+#logo{
+    width: 300px;
+    position: absolute;
+    text-align: center;
+    bottom: 17px;
+}
+
+/* * * * TOP SECTION * * * */
+#top-section{
+    position: absolute;
+    width: 300px;
+    height: 446px;
+    background-image: url(./../assets/top-section.png);
+}
+
+#top-section #title-container{
+    position: absolute;
+    -ms-transform: rotate(-12.7deg), scale(2,2);
+    -webkit-transform: rotate(-12.7deg), scale(2,2);
+    transform: rotate(-12.7deg), scale(2,2);
+
+    left: 0;
+    // left: 30px;
+    top: 166px;
+}
+
+#top-section .big-txt{
+    font-size: 146px;
+    color: #FFF;
+    font-family: 'tt_masters';
+}
+
+#top-section .sales-txt{
+    font-size: 77px;
+    color: #ffc600;
+    font-family: 'tt_masters';
+    line-height: 10px;
+}
+
+/* * * * MIDDLE SECTION * * * */
+#middle-section{
+    position: absolute;
+    top: 100px;
+    opacity: 0;
+}
+
+#middle-section #photo1{
+    position: absolute;
+    opacity: 1;
+    z-index: 30;
+}
+
+#middle-section #photo2{
+    position: absolute;
+    opacity: 0;
+    left: -300px;
+}
+
+#middle-section #photo3{
+    position: absolute;
+    opacity: 0;
+}
+
+#middle-section #photo4{
+    position: absolute;
+    opacity: 0;
+}
+
+#last-screen{
+    width: 300px;
+    opacity: 0;
+}
+
+#last-screen .cta-button{
+    position: absolute;
+    width: 178px;
+    height: 58px;
+    background-color: #ffd200;
+    font-family: 'futura_bold';
+    font-size: 20px;
+    text-align: center;
+    padding-top: 16px;
+
+    left: 60px;
+    top: 272px;
+
+    -webkit-border-sizing: border-box;
+    -moz-border-sizing: border-box;
+    -box-sizing: border-box;
+}
+
+#upto-txt{
+    position: absolute;
+    top: 72px;
+    width: 100%;
+    text-align: center;
+    // opacity: 0;
+}
+
+#off-txt{
+    position: absolute;
+    top: 214px;
+    width: 100%;
+    text-align: center;
+}
+
+#percent-txt{
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    text-align: center;
+    -ms-transform: rotate(-12.7deg);
+    // -ms-transform: scale(2,2);
+    -webkit-transform: rotate(-12.7deg);
+    // -webkit-transform: scale(2,2);
+    transform: rotate(-12.7deg);
+    // transform: scale(2,2);
+    opacity: 0;
+}
+
+#percent-txt .percent{
+    color: #db0000;
+    font-size: 110px;
+    font-family: 'tt_masters';
+}
+
+#last-screen.promo-sub{
+    color: #000;
+    font-size: 25px;
+    font-family: 'tt_masters';
+}
+
+/* * * * BOTTOM SECTION * * * */
+#bottom-section{
+    position: absolute;
+    width: 300px;
+    height: 216px;
+    background-image: url(./../assets/bottom-section.png);
+    top: 384px;
+    // display: none;
+}
