@@ -4,7 +4,7 @@ window.onload = function() {
     var tl = new TimelineMax({repeat: 3, repeatDelay: 3});
 
     tl.to("#title-container", 0.2, {ease: Power1.easeIn, opacity: 1, scale: 1, top: 166});
-    tl.to("#top-section", 0.5, {ease: Power1.easeOut, top:-264}, 1);
+    tl.to("#top-section", 0.5, {ease: Power1.easeOut, top:-240}, 1);
     tl.to("#title-container", 0.5, {ease: Power1.easeOut, scale: 0.5, top: 220}, "-=0.5");
     tl.to("#bottom-section", 0.5, {ease: Power1.easeOut, top: 475}, "-=0.5");
 
