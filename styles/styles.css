@@ -347,9 +347,6 @@ section.section-2 header p {
 }
 
 .text {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   cursor: default;
 }
 
