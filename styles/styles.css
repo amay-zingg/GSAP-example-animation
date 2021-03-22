@@ -309,6 +309,10 @@ section .section-2 {
   text-align: center;
 }
 
+section.section-2 header p {
+  margin: 1em 0;
+}
+
 @media only screen and (min-width: 900px) {
   .wrapper {
     max-width: 1024px;
@@ -351,7 +355,7 @@ section .section-2 {
 
 @font-face {
   font-family: 'tt_masters';
-  src: url("./../tt-masters-demo.mastersdemoblack-webfont.woff") format("woff2"), url("./../tt-masters-demo.mastersdemoblack-webfont.woff2") format("woff");
+  src: url("./../fonts/tt-masters-demo.mastersdemoblack-webfont.woff") format("woff2"), url("./../fonts/tt-masters-demo.mastersdemoblack-webfont.woff2") format("woff");
   /* Pretty Modern Browsers */
   font-weight: normal;
   font-style: normal;
@@ -359,7 +363,7 @@ section .section-2 {
 
 @font-face {
   font-family: 'futura_bold';
-  src: url("./../futura_bold-webfont.woff2") format("woff2"), url("./../futura_bold-webfont.woff") format("woff");
+  src: url("./../fonts/futura_bold-webfont.woff2") format("woff2"), url("./../fonts/futura_bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -378,12 +382,13 @@ section .section-2 {
   width: 300px;
   height: 446px;
   background-image: url(./../assets/top-section.png);
+  z-index: 30;
 }
 
 #top-section #title-container {
   position: absolute;
-  -webkit-transform: rotate(-12.7deg), scale(2, 2);
-  transform: rotate(-12.7deg), scale(2, 2);
+  -webkit-transform: rotate(-12.7deg) scale(2, 2);
+  transform: rotate(-12.7deg) scale(2, 2);
   left: 0;
   top: 166px;
 }
@@ -405,23 +410,31 @@ section .section-2 {
 #middle-section {
   position: absolute;
   top: 100px;
-  opacity: 0;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
 }
 
 #middle-section #photo1 {
   position: absolute;
+  width: 600px;
   opacity: 1;
-  z-index: 30;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 #middle-section #photo2 {
   position: absolute;
+  width: 600px;
   opacity: 0;
   left: -300px;
 }
 
 #middle-section #photo3 {
   position: absolute;
+  width: 600px;
   opacity: 0;
 }
 
@@ -470,8 +483,8 @@ section .section-2 {
   top: 90px;
   width: 100%;
   text-align: center;
-  -webkit-transform: rotate(-12.7deg);
-  transform: rotate(-12.7deg);
+  -webkit-transform: rotate(-12.7deg) scale(2, 2);
+  transform: rotate(-12.7deg) scale(2, 2);
   opacity: 0;
 }
 
