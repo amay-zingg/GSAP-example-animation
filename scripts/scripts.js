@@ -1,4 +1,3 @@
-// $(() => {
 window.onload = function() {
 
     var tl = new TimelineMax({repeat: 3, repeatDelay: 3});
@@ -8,7 +7,6 @@ window.onload = function() {
     tl.to("#title-container", 0.5, {ease: Power1.easeOut, scale: 0.5, top: 250}, "-=0.5");
     tl.to("#bottom-section", 0.5, {ease: Power1.easeOut, top: 475}, "-=0.5");
 
-    // tl.to("#photo1", 1, {opacity: 1, ease: Linear.easeIn});
     tl.to("#photo1", 2, {ease: Linear.easeOut, left: -300}, "-=0.5");
     tl.to("#photo1", 0.4, {opacity: 0}, "-=0.4");
 
@@ -27,8 +25,6 @@ window.onload = function() {
     tl.to("#percent-txt", 0.3, {ease: Power1.easeIn, opacity: 1, scale: 1});
     tl.to("#off-txt", 0.3, {ease: Power1.easeIn, opacity: 1});
 }
-
-//  });
 
 // * * * * LINKS
 // MY GUY!
